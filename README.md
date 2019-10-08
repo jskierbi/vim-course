@@ -42,4 +42,4 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * **dw** delete word (deletion starts where your cursor is)
 * **D** (same as **d$**) - delete the line
 
-### [count]operation{motion}
+`[count]operation{motion}`
