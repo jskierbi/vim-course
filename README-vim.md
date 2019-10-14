@@ -13,7 +13,7 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * **W** (right one word, whitespace is a separator)
 * **b** (left one word, whitespace is a separator)
 * **B** (left one word, whitespace is a separator)
-
+* **11j**, **11k** (11 lines down, 11 lines up)
 * **z + enter** (reposition text to cursor position)
 * **0** (zero: jump to the beginning of the line)
 * **^** (caret: jump to first character in the line, like in regex)
@@ -22,6 +22,7 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * **2G** (go to line 2), if you don't specify line number: go to last line
 * **ctrl+g**: display file information
 * **ctrl+g, g**: display more detailed file information
+* **{** or **}** (paragraf back, paragraph forwards)
 
 ### Line mode:
 
@@ -43,3 +44,11 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * **D** (same as **d$**) - delete the line
 
 `[count]operation{motion}`
+
+### Copy-Paste
+
+* cut=**delete**, copy=**yank**, paste=**put**
+* **dd** cut the line
+* **p** or **P** paste the line (below or above current line)
+* **"** specify register (0-9: std, like stack, a-z: named, use uppercase to append)
+* **:reg 1z** show contents of registers 1 and z
