@@ -2,6 +2,8 @@
 
 ![1570530073552](../../.images/1570530073552.png)
 
+`[count]operation{motion}`
+
 ### Command Mode
 
 * **ctrl+f** (forward, page down)
@@ -23,6 +25,8 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * **ctrl+g**: display file information
 * **ctrl+g, g**: display more detailed file information
 * **{** or **}** (paragraf back, paragraph forwards)
+* **u** undo (same as ctrl-z in other editors)
+* **ctrl+r** redo (same as ctrl+shift+z or ctrl+y in other editors)
 
 ### Line mode:
 
@@ -35,15 +39,27 @@ Vim understands objects such as: words, sentences, lines, paragraphs
 * `:set ruler` set ruler on (line number displayed all the time)
 * `:set noruler` set ruler off
 * `:set ruler!` toggle ruler
+* `:set nowildmenu` disable wildmenu from tab-completion
 
 ### Deleting
 
 * **x** delete character under the cursor
 * **X** delete character before the cursor
 * **dw** delete word (deletion starts where your cursor is)
-* **D** (same as **d$**) - delete the line
+* **d$ or D** - delete the line
 
 `[count]operation{motion}`
+
+### Navigation
+
+* **ctrl+o** navigate back
+* **ctrl+i** navigate forward
+* **ctrl+]** navigate to link (in documentation)
+* **ctrl+w, w** jump between open windows (when documentation is open)
+
+Command line completion:
+
+* **:h d** (then press tab) -> will show autocomplete list of available options
 
 ### Copy-Paste
 
