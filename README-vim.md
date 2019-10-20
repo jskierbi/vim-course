@@ -68,3 +68,15 @@ Command line completion:
 * **p** or **P** paste the line (below or above current line)
 * **"** specify register (0-9: std, like stack, a-z: named, use uppercase to append)
 * **:reg 1z** show contents of registers 1 and z
+
+### Search
+
+* **f{char}**, **F{char}** find next/prev occurance of char
+* **;**, **,** repeat find in same direction/reversed direction
+* **t{char}**, **T{char}** find next/prev occurance, place cursor before the char
+* Example: `Delete THIS<<--- word.` -> *fT, dtW* (find T, delete till W)
+* **/**, **?** search forwards, backwards
+* **n**, **N** repeat search forwads, backwards
+* **:set is**, **:set hls** incremental search, highlight search
+* **:nohls** remove highlights from current search
+* \* (asterisk), # find occurance of word under the cursor forwards, backwards (matching an entire word)
