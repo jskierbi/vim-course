@@ -81,7 +81,7 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 ### Search
 
 * **f{char}**, **F{char}** find next/prev occurance of char
-* **;**, **,** repeat find in same direction/reversed direction
+* **;** or **,** repeat find in same direction/reversed direction
 * **t{char}**, **T{char}** find next/prev occurance, place cursor before the char
 * Example: `Delete THIS<<--- word.` -> *fT, dtW* (find T, delete till W)
 * **/**, **?** search forwards, backwards
