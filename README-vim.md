@@ -73,6 +73,15 @@ Command line completion:
 * **"** specify register (0-9: std, like stack, a-z: named, **use uppercase to append**)
 * **:reg 1z** show contents of registers 1 and z
 
+### VIM objects guide:
+
+https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
+
+* **ci'** change inside single quote (delete + enter insert mode)
+* **ca'** change an object including white space (includes quotes)
+* **di'** delete inside single quite
+* **dit** delete inside a HTML tag
+
 ### Search
 
 * **f{char}**=find next char **F{char}**=find prev char
