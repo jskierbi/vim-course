@@ -142,6 +142,9 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 ### JSON
 * `:%!jq .` formats json
   * Requires: `sudo apt install jq`
+* `:set fdm=indent` foldmethod = indent
+  * **zC**=**c**ollapse fold, **zo**=**o**pen fold
+  * **zR**=unfold all **zM**=fold all
 
 ### External programms
 * `:{range}! <cmd>` filter lines through external program
