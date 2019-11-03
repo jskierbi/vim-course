@@ -8,11 +8,10 @@
 
 * **ctrl+f** (forward, page down)
 * **ctrl+b** (backward, page up)
-
 * **w**=word for**w**ard, **W**=word for**w**ard, ignore punctuation
 * **b**=word **b**ack, **B**=word **b**ack, ignore punctuation
 * **e**=word **e**nd, **E**=word **e**nd, ignore punctuation
-* **z + enter** (scroll to cursor position)
+* **z, enter** (scroll to cursor position)
 * **0**=line beginning, **^**=first char in line, **$**=last char in line
 * **{**=paragraph back, **}**=paragraph fwd
 *  **gg**=first line, **G**=last line, **2G**=**2gg**=goto line 2
@@ -52,6 +51,7 @@
 * **p** or **P** paste the line (below or above current line)
 * **"** specify register (0-9: std, like stack, a-z: named, **use uppercase to append**)
 * **:reg 1z** show contents of registers 1 and z
+* `:%y`=yank whole file
 
 ### VIM objects guide:
 
@@ -139,3 +139,9 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 * **ctrl+w, H/J/K/L**=move window to far left/bottom/top/far right
 * ``:windo {operation}``, `:bufdo {operation}`
 
+### JSON
+* `:%!jq .` formats json
+  * Requires: `sudo apt install jq`
+
+### External programms
+* `:{range}! <cmd>` filter lines through external program
