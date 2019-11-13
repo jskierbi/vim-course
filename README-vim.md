@@ -40,9 +40,28 @@
 ### Navigation
 
 * **ctrl+o**=navigate back
+
 * **ctrl+i**=navigate forward
+
 * **ctrl+]**=navigate to link (in documentation)
+
 * **:{cmd} + <TAB>**=autocomplete
+
+* **ctrl+f**=page down, **ctrl+b**=page up
+
+* **ctrl+Y**=move viewport down, **ctrl+e**=move viewport up
+
+* jj**ctrl+u**=move **u**p 
+
+* One line
+
+  - `Ctrl+Y` → Move viewport down
+  - `Ctrl+E` → Move viewport up (**E**xtra lines)
+
+  Half a screen
+
+  - `Ctrl+U` → Move viewport **U**p
+  - `Ctrl+D` → Move viewport **D**own
 
 ### Copy-Paste
 
@@ -147,4 +166,12 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
   * **zR**=unfold all **zM**=fold all
 
 ### External programms
+
 * `:{range}! <cmd>` filter lines through external program
+
+### Terminal in Vim
+
+* `:term`, run `exit` to close the window
+* **ctrl+z** to suspend VIM and go to terminal, `fg` to return back to VIM
+* `:! <command>` execute command switching to the terminal to see outputs
+* `:[range]! <command>` run command on each line
