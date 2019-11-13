@@ -139,7 +139,8 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 * `:badd`=add buffer `:bd`=delete
   * `:bd 3`
   * `:badd buf-dad.txt`
-  * `:1,3bd`=range delete (1 to 3)
+  * `:1,3bd`=
+  * range delete (1 to 3)
 * `:bufdo`=execute command on all buffers
   * `:bufdo %s/#/*/g | w` = substitute and write (pipe=command separator)
 * `set hidden`=hide buffers instead of closing when switching
@@ -172,6 +173,7 @@ https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 ### Terminal in Vim
 
 * `:term`, run `exit` to close the window
+* `:[range]term` run range in terminal
 * **ctrl+z** to suspend VIM and go to terminal, `fg` to return back to VIM
 * `:! <command>` execute command switching to the terminal to see outputs
-* `:[range]! <command>` run command on each line
+* `:[range]! <command>` replace each line by output of the command
